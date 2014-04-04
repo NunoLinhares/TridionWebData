@@ -13,7 +13,9 @@ namespace TridionWebData.Models
 
         public static List<Author> GetAuthors()
         {
-            return TridionDataProvider.GetAllAuthors();
+            if (Constants.UseWebService)
+                return TridionDataProvider.GetAllAuthors();
+            return TridionBrokerDataProvider.GetAllAuthors();
         }
     }
 }

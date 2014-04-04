@@ -21,9 +21,12 @@ namespace TridionWebData.Models
         public List<string> ContentCategories { get; set; }
         public InformationSource InformationSource { get; set; }
 
+
         public static List<Article> GetArticles()
         {
-            return TridionDataProvider.GetAllArticles();
+            if(Constants.UseWebService)
+                return TridionDataProvider.GetAllArticles();
+            return TridionBrokerDataProvider.GetAllArticles();
         }
     }
 }

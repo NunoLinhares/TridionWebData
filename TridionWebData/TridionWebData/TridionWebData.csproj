@@ -91,6 +91,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Tridion.ContentDelivery, Version=7.1.0.165, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Tridion.ContentDelivery.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -116,6 +120,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\TridionDataContext.cs" />
+    <Compile Include="Data\Constants.cs" />
+    <Compile Include="Data\TridionBrokerDataProvider.cs" />
     <Compile Include="Data\TridionDataProvider.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Author.cs" />

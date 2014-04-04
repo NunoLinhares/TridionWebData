@@ -13,7 +13,9 @@ namespace TridionWebData.Models
 
         public static List<InformationSource> GetInformationSources()
         {
-            return TridionDataProvider.GetAllInformationSources();
+            if (Constants.UseWebService)
+                return TridionDataProvider.GetAllInformationSources();
+            return TridionBrokerDataProvider.GetAllInformationSources();
         }
     }
 }
