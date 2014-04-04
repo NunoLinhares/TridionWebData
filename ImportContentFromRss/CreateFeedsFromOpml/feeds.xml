@@ -1,0 +1,140 @@
+﻿<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>OPML exported from Outlook</title>
+    <dateCreated>Thu, 6 Mar 2014 08:01:41 -0500</dateCreated>
+    <dateModified>Thu, 6 Mar 2014 08:01:41 -0500</dateModified>
+  </head>
+  <body>
+    <outline text="Recent Questions - Tridion Stack Exchange" type="rss"
+    xmlUrl="http://tridion.stackexchange.com/feeds"/>
+    <outline text="Dominic Cronin's weblog" type="rss"
+    xmlUrl="http://www.dominic.cronin.nl/weblog/main/RSS"/>
+    <outline text="tridion-2011-power-tools project updates - Google Code"
+    type="rss"
+    xmlUrl="http://code.google.com/feeds/p/tridion-2011-power-tools/updates/basic"/>
+    <outline text="TAHZOO" type="rss" xmlUrl="http://blog.tahzoo.com/feed/"/>
+    <outline text="Seeta Ramayya Vadali" type="rss"
+    xmlUrl="http://vadalis.com/feed/"/>
+    <outline text="Eric Huiza" type="rss"
+    xmlUrl="http://erichuiza.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Tridion Tips" type="rss"
+    xmlUrl="http://tridion-tips.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="The Puf Principle" type="rss"
+    xmlUrl="http://frank.vanpuffelen.net/feeds/posts/default"/>
+    <outline text="Julian Wraith" type="rss"
+    xmlUrl="http://www.julianwraith.com/feed/"/>
+    <outline text="Jeroen Bok's Blog" type="rss"
+    xmlUrl="http://www.jeroenbok.com/feeds/posts/default?alt=rss"/>
+    <outline text="Stefan's thoughts on Tridion" type="rss"
+    xmlUrl="http://stefanstridion.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Charles's Blog" type="rss"
+    xmlUrl="http://charles-blog.appspot.com/feeds/atom.xml"/>
+    <outline text="Mónica Manzano" type="rss"
+    xmlUrl="http://monicamanzano.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Tr3dion Revealed" type="rss"
+    xmlUrl="http://tridionrevealed.wordpress.com/feed/"/>
+    <outline text="Inside CXM RSS feed" type="rss"
+    xmlUrl="http://feeds.feedburner.com/InsideCxmRssFeed?format=xml"/>
+    <outline text="Active questions tagged odata - Stack Overflow" type="rss"
+    xmlUrl="http://stackoverflow.com/feeds/tag/odata"/>
+    <outline text="Disruptive Innovator" type="rss"
+    xmlUrl="http://www.createandbreak.net/feeds/posts/default"/>
+    <outline text="Curlette, SDL Tridion Consulting and Solutions" type="rss"
+    xmlUrl="http://www.curlette.com/?feed=rss2"/>
+    <outline text="Trivident" type="rss" xmlUrl="http://blog.trivident.com/feed/"/>
+    <outline text="Web In Context" type="rss"
+    xmlUrl="http://www.ianhomer.com/feeds/posts/default?alt=rss"/>
+    <outline text="Building Blocks » Our Thinking" type="rss"
+    xmlUrl="http://blog.building-blocks.com/feed"/>
+    <outline text="Yet Another Tridion Blog" type="rss"
+    xmlUrl="http://yatb.mitza.net/feeds/posts/default?alt=rss"/>
+    <outline text="Vesa's Blog" type="rss"
+    xmlUrl="http://idonotalwaystestmycode.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Meet John Song" type="rss"
+    xmlUrl="http://meetjohnsong.com/feed/"/>
+    <outline text="Jaime's Ideas" type="rss"
+    xmlUrl="http://jaimesantosalcon.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Frank M Taylor" type="rss"
+    xmlUrl="http://feeds.feedburner.com/blog-frankmtaylor"/>
+    <outline text="Albert te Boekhorst" type="rss"
+    xmlUrl="http://www.albertteboekhorst.com/feed/"/>
+    <outline text="Coded Weapon" type="rss" xmlUrl="http://codedweapon.com/feed/"/>
+    <outline text="tridion-practice project updates - Google Code" type="rss"
+    xmlUrl="https://code.google.com/feeds/p/tridion-practice/updates/basic"/>
+    <outline text="Nuno Linhares" type="rss"
+    xmlUrl="http://nunolinhares.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="SDL Tridion for Strategists" type="rss"
+    xmlUrl="http://tridionstrategist.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="ju.Xk5 e8O G6R Hs,[L-" type="rss"
+    xmlUrl="http://amarchuk.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Addictive Software" type="rss"
+    xmlUrl="http://blog.addictivesoftware.net/feed/"/>
+    <outline text="80,000 Feet and Climbing" type="rss"
+    xmlUrl="http://80000ft.blogspot.com/feeds/posts/default"/>
+    <outline text="Albertromkes's Weblog" type="rss"
+    xmlUrl="http://albertromkes.wordpress.com/feed/"/>
+    <outline text="Doodle's Development Diary" type="rss"
+    xmlUrl="http://www.doodle.co.uk/Blogs.aspx/Rss"/>
+    <outline text="esteewhy's N+1 online identity" type="rss"
+    xmlUrl="http://esteewhy.posterous.com/rss.xml"/>
+    <outline text="Tridion Talk" type="rss"
+    xmlUrl="http://www.tridiontalk.com/index.php/feed/"/>
+    <outline text="Asier Fernández" type="rss"
+    xmlUrl="http://www.asierfernandez.com/feeds/posts/default"/>
+    <outline text="Something interesting =)" type="rss"
+    xmlUrl="http://vvlasenko.blogspot.com/feeds/posts/default"/>
+    <outline text="SDL Tridion internals" type="rss"
+    xmlUrl="http://tridioninternals.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="SDL Tridion Tips and Tricks" type="rss"
+    xmlUrl="http://tridionuser.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="In Time" type="rss"
+    xmlUrl="http://elenaserghie.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Jin Tridion Blog" type="rss"
+    xmlUrl="http://rjin-tridion.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Pankaj Gaur's Blog" type="rss"
+    xmlUrl="http://pankajgaur83.wordpress.com/feed/"/>
+    <outline text="Digital Fusion" type="rss" xmlUrl="http://dfusion.me/feed/"/>
+    <outline text="Peter Kjaer (SDL)" type="rss"
+    xmlUrl="http://pkjaer.wordpress.com/feed/"/>
+    <outline text="Life of a geek and a part-time poet" type="rss"
+    xmlUrl="http://yoavniran.wordpress.com/feed/"/>
+    <outline text="SDL Tridion Developer" type="rss"
+    xmlUrl="http://www.tridiondeveloper.com/feed"/>
+    <outline text="Oskar uit de Bos" type="rss"
+    xmlUrl="http://www.aspnet-mvc-info.com/feed/"/>
+    <outline text="Shared By Jan" type="rss"
+    xmlUrl="http://sharedbyjan.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Miguel Miguelez" type="rss"
+    xmlUrl="http://miguelmiguelez.blogspot.com/feeds/posts/default"/>
+    <outline text="Kunal Shetye's Blog" type="rss"
+    xmlUrl="http://blog.shetye.net/feed/"/>
+    <outline text="Remco's Blog" type="rss"
+    xmlUrl="http://blog.sdltridion.com/rss.php?blog_id=111be40a-7483-48c0-85dd-c4cbcad6d299"/>
+    <outline text="A Random Blog by a Random Tridion Blogger" type="rss"
+    xmlUrl="http://randomtridionblogger.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Tridion" type="rss" xmlUrl="http://tridion.tumblr.com/rss"/>
+    <outline text="Tridion Stuff - Stack Exchange" type="rss"
+    xmlUrl="http://stackexchange.com/feeds/tagsets/68733/tridion-stuff?sort=newest"/>
+    <outline
+    text="Asp .net certification c#, C sharp, Tridion, Sql Server: Raj's Blog"
+    type="rss" xmlUrl="http://rajmittal.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline text="Confessions of a Tridion Fan Boy" type="rss"
+    xmlUrl="http://tridionfanboy.wordpress.com/feed/"/>
+    <outline text="UrbanCherry Blog" type="rss"
+    xmlUrl="http://www.urbancherry.net/blogengine/syndication.axd?format=rss"/>
+    <outline text="SDL Tridion World" type="rss"
+    xmlUrl="http://www.sdltridionworld.com/rss.aspx"/>
+    <outline text="SDL Tridion Stuff" type="rss"
+    xmlUrl="http://wordpress.urbancherry.net/feed/"/>
+    <outline text="Nuts About Tridion" type="rss"
+    xmlUrl="http://tridionnut.blogspot.com/feeds/posts/default"/>
+    <outline text="Error Unauthorized access by sdl1" type="rss"
+    xmlUrl="http://api.sysomos.com/hb/v1/heartbeat/rss?startid=0&amp;hbrss=uVz5SbOlQwoCsEoaxv0_-wYqodIc2RsMQ..&amp;fbPageID=&amp;maxC=6&amp;max=20&amp;hid=2157&amp;fTs=me&amp;tab=beats&amp;scO=Recency&amp;%5baction.subscribe"/>
+    <outline text="MRGN" type="rss" xmlUrl="http://www.mrgn.co/feed/"/>
+    <outline text="Thois" type="rss" xmlUrl="http://thois.org/rss/"/>
+    <outline text="Remco Rakers" type="rss" xmlUrl="http://remcorakers.nl/feed/"/>
+    <outline text="newest questions tagged tridion - Stack Overflow" type="rss"
+    xmlUrl="http://stackoverflow.com/feeds/tag?tagnames=tridion&amp;sort=newest"/>
+  </body>
+</opml>
