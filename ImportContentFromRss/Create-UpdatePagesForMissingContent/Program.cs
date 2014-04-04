@@ -1,12 +1,8 @@
-﻿using System;
+﻿using ImportContentFromRss;
+using ImportContentFromRss.Content;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using ImportContentFromRss;
-using ImportContentFromRss.Content;
 using Tridion.ContentManager.CoreService.Client;
 
 namespace Create_UpdatePagesForMissingContent

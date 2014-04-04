@@ -43,7 +43,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TidyNet">
-      <HintPath>..\..\..\Tridion 2011\ImportWeeklyContent\ImportWeeklyContent\bin\Debug\TidyNet.dll</HintPath>
+      <HintPath>D:\Tridion 2013\ImportContentFromRss\ImportContentFromRss\bin\Debug\TidyNet.dll</HintPath>
     </Reference>
     <Reference Include="Tridion.Common, Version=6.1.0.25, Culture=neutral, PublicKeyToken=349a39f202fa9b53, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
