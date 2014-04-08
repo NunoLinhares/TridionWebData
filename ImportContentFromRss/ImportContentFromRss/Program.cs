@@ -9,6 +9,7 @@ using System.Xml;
 using System.Xml.Linq;
 using Tridion.ContentManager;
 using Tridion.ContentManager.CoreService.Client;
+using Constants = ImportContentFromRss.Content.Constants;
 
 namespace ImportContentFromRss
 {
@@ -76,7 +77,8 @@ namespace ImportContentFromRss
                                 {
                                     feedXml = new XmlDocument();
                                     feedXml.Load(source.RssFeedUrl);
-                                }catch (Exception ex)
+                                }
+                                catch (Exception ex)
                                 {
                                     Console.WriteLine("Something went wrong loading " + source.RssFeedUrl);
                                     Console.WriteLine(ex.ToString());
@@ -92,8 +94,7 @@ namespace ImportContentFromRss
                                         cm.FindPersonByNameOrAlternate(feedXml.SelectSingleNode(xpath, nm).InnerText);
                                     if (author == null)
                                     {
-                                        author = new Person(client)
-                                                     {Name = feedXml.SelectSingleNode(xpath, nm).InnerText};
+                                        author = new Person(client) { Name = feedXml.SelectSingleNode(xpath, nm).InnerText };
                                         author.Save();
                                         author =
                                             cm.FindPersonByNameOrAlternate(
@@ -134,9 +135,9 @@ namespace ImportContentFromRss
                         author = cm.FindPersonByNameOrAlternate(name, true);
                     }
 
-                    List<Person> authors = new List<Person> {author};
+                    List<Person> authors = new List<Person> { author };
                     //Console.WriteLine("Using author: " + author.Name);
-
+                    string stackOverflowId = null;
                     if (source.IsStackOverflow)
                     {
                         if (string.IsNullOrEmpty(author.StackOverflowId))
@@ -144,6 +145,11 @@ namespace ImportContentFromRss
                             author.StackOverflowId = item.Authors[0].Uri;
                             author.Save(true);
                         }
+                    }
+
+                    if (source.IsTridionStackExchange)
+                    {
+                        stackOverflowId = item.Id;
                     }
 
                     if (item.PublishDate.DateTime > DateTime.MinValue)
@@ -166,12 +172,34 @@ namespace ImportContentFromRss
 
                         OrganizationalItemItemsFilterData filter = new OrganizationalItemItemsFilterData();
                         bool alreadyExists = false;
-                        foreach (XElement node in client.GetListXml(store, filter).Nodes())
+                        XElement items = client.GetListXml(store, filter);
+                        foreach (XElement node in items.Nodes())
                         {
+                            if (source.IsTridionStackExchange)
+                            {
+                                Article a = new Article(new TcmUri(node.Attribute("ID").Value), client);
+                                if (a.StackOverFlowQuestionId == stackOverflowId)
+                                {
+                                    alreadyExists = true;
+                                    if (a.Title != node.Attribute("Title").Value)
+                                    {
+                                        a.Title = node.Attribute("Title").Value;
+                                        a.Save();
+                                        Console.WriteLine("Modified title of article with TrEx ID: " + stackOverflowId);
+                                    }
+                                    continue;
+                                }
+                                
+                            }
+
                             if (!node.Attribute("Title").Value.Equals(articleTitle)) continue;
                             alreadyExists = true;
                             break;
                         }
+
+                        // Loop differently if this is Tridion on StackExchange (titles tend to change as people fix the content)
+
+
                         if (!alreadyExists)
                         {
 
@@ -237,6 +265,7 @@ namespace ImportContentFromRss
                             article.Title = articleTitle;
                             article.Summary = summary;
                             article.Url = item.Links.First().Uri.AbsoluteUri;
+                            //if (stackOverflowId != null) article.StackOverFlowQuestionId = stackOverflowId;
                             List<string> categories = new List<string>();
                             foreach (var category in item.Categories)
                             {
@@ -245,6 +274,7 @@ namespace ImportContentFromRss
                             article.Categories = categories;
                             article.Source = source;
                             article.Save();
+
                             Console.Write("#");
                             newArticles.Add(article);
                         }
@@ -273,7 +303,7 @@ namespace ImportContentFromRss
                     {
                         string yearSg = cm.GetStructureGroup(article.Date.Year.ToString(CultureInfo.InvariantCulture), sg);
                         string pageId = cm.AddToPage(yearSg, article);
-                        if(!idsToPublish.Contains(pageId))idsToPublish.Add(pageId);
+                        if (!idsToPublish.Contains(pageId)) idsToPublish.Add(pageId);
                         Console.WriteLine(article.Title + ", " + article.Authors[0].Name);
                     }
                     Console.WriteLine("-------");
@@ -284,7 +314,7 @@ namespace ImportContentFromRss
             //Publishing
             cm.Publish(idsToPublish.ToArray(), "tcm:0-2-65537");
 
-            
+
             Console.WriteLine("Finished, press any key to exit");
             Console.Read();
         }

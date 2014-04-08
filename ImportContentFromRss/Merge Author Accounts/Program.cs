@@ -12,8 +12,8 @@ namespace Merge_Author_Accounts
         {
             SessionAwareCoreServiceClient client = new SessionAwareCoreServiceClient("netTcp_2013");
 
-            const string primaryAccountName = "Robert Curlette";
-            List<string> alternateNames = new List<string> {"robrtc"};
+            const string primaryAccountName = "Chris Summers";
+            List<string> alternateNames = new List<string> { "blog.nospam@nospam.urbancherry.net (chris)" };
 
             ContentManager cm = new ContentManager(client);
             List<Person> persons = cm.GetPersons();

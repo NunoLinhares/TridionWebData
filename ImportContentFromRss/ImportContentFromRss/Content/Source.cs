@@ -57,5 +57,10 @@ namespace ImportContentFromRss.Content
         {
             get { return Title.Equals("Stack Overflow"); }
         }
+
+        public bool IsTridionStackExchange
+        {
+            get { return Title.Equals("Tridion on StackExchange"); }
+        }
     }
 }
